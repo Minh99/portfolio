@@ -14,5 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $members = [
+        [
+            'name' => 'Trần Minh Tiến',
+        ],
+        [
+            'name' => 'Trần Thiện Chí',
+        ],
+        [
+            'name' => 'Phạm Văn Minh',
+        ],
+    ];
+
+    $menu = [
+        'Home', 'About', 'Skill', 'Service', 'Portfolio', 'Contact'
+    ];
+
+
+    $data = [
+        'members' => $members,
+        'menu' => $menu,
+    ];
+
+    return view('index', $data);
 });
