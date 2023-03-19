@@ -1,6 +1,5 @@
-<section id="Service" class="section">
-    <div class="container text-center">
-        <h6 class="subtitle">Service</h6>
+<section id="service" class="section mt-4">
+    <div class="container text-center pt-4">
         <h6 class="section-title mb-4">What I Do</h6>
         <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
 

@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Start your development with Steller landing page.">
     <meta name="author" content="Devcrud">
-    <title>Steller Landing page | Free Bootstrap 4.1 landing page</title>
+    <meta icon="icon" href="{{ asset('assets/imgs/logo.png') }}">
+    <title>Portfilo CTM-Team</title>
     <!-- font icons -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/themify-icons/css/themify-icons.css') }}">
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="{{ asset('assets/css/steller.css') }}">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
     @include('components.header', $menu)
 
-    @each('components.member',  $members, 'member', 'view.empty')
+    @include('components.member',  $members)
 
     @include('components.skills')
 

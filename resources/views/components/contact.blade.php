@@ -1,4 +1,4 @@
-<section id="Contact" class="position-relative section">
+<section id="contact" class="position-relative section">
     <div class="container text-center">
         <h6 class="subtitle">Contact</h6>
         <h6 class="section-title mb-4">Get In Touch With Me</h6>

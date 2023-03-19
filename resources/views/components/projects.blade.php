@@ -1,4 +1,4 @@
-<section id="Portfolio" class="section">
+<section id="portfolio" class="section">
     <div class="container text-center">
         <h6 class="subtitle">Portfolio</h6>
         <h6 class="section-title mb-4">Check My Wonderful Works</h6>
