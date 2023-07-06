@@ -17,22 +17,9 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     @php($appName = config('app.name'))
 
-    @include('components.header', [$menu, $appName])
+    @include('components.header', [$menu, $isDetail, $appName])
 
-    @include('components.member',  [$members, $appName])
-
-    @include('components.skills', [$appName])
-
-    @include('components.services', [$appName])
-
-    {{-- Portfilo --}}
-    @if($projects)
-        @include('components.projects', [$projects, $appName])
-    @endif
-
-    @include('components.hireMe', [$appName])
-
-    @include('components.contact', [$appName])
+    @include('components.detail', [$project, $appName])
 
     @include('components.footer', [$appName])
 
@@ -44,5 +31,17 @@
 
     <!-- steller js -->
     <script src="{{ asset('assets/js/steller.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            var menus = $('a.nav-link');
+            menus.each(function(index, item) {
+                $(item).click(function() {
+                    console.log($(item).attr('data-go-to'));
+                    window.location.href = "/#"+$(item).attr('data-go-to');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

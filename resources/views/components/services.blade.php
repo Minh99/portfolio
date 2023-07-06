@@ -1,7 +1,6 @@
 <section id="service" class="section mt-4">
     <div class="container text-center pt-4">
-        <h6 class="section-title mb-4">What I Do</h6>
-        <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+        <h6 class="section-title mb-4">{{ __('messages.what_i_do', ['name' => $appName]) }}</h6>
 
         <div class="row">
             <div class="col-sm-6 col-md-3 mb-4">
@@ -32,7 +31,7 @@
                 <div class="custom-card card border">
                     <div class="card-body">
                         <i class="icon ti-bar-chart"></i>
-                        <h5>SEO</h5>
+                        <h5>Tools On Demand</h5>
                     </div>
                 </div>
             </div>

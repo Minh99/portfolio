@@ -1,0 +1,46 @@
+.card-body {
+    position: relative;
+}
+
+.ccc a {
+    position: absolute !important;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.ccc a:hover {
+    color: white;
+}
+
+.ccc:hover a {
+    color: white;
+}
+
+.carousel .carousel-indicators li {
+    background: #0a0808;
+    box-shadow: unset !important;
+    border: unset !important;
+}
+.carousel .carousel-indicators li.active {
+    box-shadow: unset !important;
+    background: #1c7db7;
+}
+.bg-primary {
+    background-color: #9cbbec !important;
+}
+.custom-card .card-body i {
+    color: #9cbbec !important;
+}
+.custom-card:hover, .custom-card:active {
+    background-color: #4b75b8 !important;
+}
+
+.infor-header {
+    flex-direction: row-reverse;
+    text-align: right !important;
+}
+.socials{
+    float: right !important;
+}
+
+

@@ -1,0 +1,29 @@
+.card-body {
+    position: relative;
+}
+
+.card-body a {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.card-body a:hover {
+    color: white;
+}
+
+.card-body:hover a {
+    color: white;
+}
+
+.carousel .carousel-indicators li.active {
+    box-shadow: unset !important;
+}
+
+.infor-header {
+    flex-direction: row-reverse;
+    text-align: right !important;
+}
+.infor-header .infors .socials{
+    float: right !important;
+}

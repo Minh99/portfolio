@@ -25,7 +25,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #ff7a57;
+  --primary: #4b75b8;
   --secondary: #6c757d;
   --success: #A3C14A;
   --info: #47D8E0;
@@ -160,7 +160,7 @@ sup {
 }
 
 a {
-  color: #ff7a57;
+  color: #4b75b8;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2770,7 +2770,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #ff7a57;
+  background-color: #4b75b8;
   border-color: #ff7a57;
 }
 
@@ -11022,8 +11022,8 @@ pre {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #ff7a57;
-  color: #ff7a57;
+border: 2px solid #e59607;
+color: #ffffff;
   text-align: center;
   line-height: 40px;
   -webkit-transition: all 0.3s;
@@ -11332,7 +11332,7 @@ pre {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
 #map iframe {
@@ -11368,7 +11368,7 @@ pre {
 }
 
 .navbar .navbar-nav .nav-link.active {
-  color: #ff7a57;
+  color: #4b75b8;
 }
 
 .navbar .navbar-nav .btn {
@@ -11421,7 +11421,7 @@ pre {
 }
 
 .page-footer {
-  background: #fcfdff;
+  background: #6c6c6e;
 }
 
 .page-footer .row {

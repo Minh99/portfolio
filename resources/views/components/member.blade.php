@@ -1,6 +1,6 @@
 <section id="about" class="section pt-4">
     <div class="container text-center pt-4">
-        <h6 class="section-title mb-4 pt-4">{{ __('messages.introduce') }}</h6>
+        <h6 class="section-title mb-4 pt-4">{{ __('messages.introduce', ['name' => $appName]) }}</h6>
         <p class="mb-2 pb-2 text-left">{{ __('messages.about_our', ['year' => 3])}}</p>
 
         {{-- data-interval="3000" --}}
@@ -30,7 +30,7 @@
                                 </p>
                                 <h1 class="title">{{ $member['name'] }}</h1>
                                 <h1 class="subtitle">Full Stack Developer</h1>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -42,4 +42,3 @@
         </div>
     </div>
 </section>
-    

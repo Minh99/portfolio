@@ -1,9 +1,9 @@
 <?php
 return [
-    'name' => 'CTM',
-    'team' => 'CTM - TEAM',
-    'hello' => 'Hello, Welcome to',
-    'introduce' => 'Introduce CTM team',
+    'name' => ':name',
+    'team' => ':name - TEAM',
+    'hello' => 'Welcome to',
+    'introduce' => 'Introduce :name team',
     'about_our' => 'We are programmers with over :year years of experience in software development. Applications, Websites, and digital transformation tools ranging from simple to complex. We are flexible in using various programming languages and new technologies. Our goal is always to satisfy our customers to the best of our abilities.',
     'jobs' => 'Application | Website | Tools',
     'menu' => [
@@ -18,9 +18,14 @@ return [
     'reason_2' => 'Service commitment',
     'reason_3' => 'High-quality technology solutions at a reasonable price',
     'show_more' => 'Show more',
-    'why_choose_me' => 'Why choose CTM',
+    'why_choose_me' => 'Why choose :name',
     'why_choose_me_content' => 'If you are looking for a reliable IT partner to help you solve technology-related issues, then we are the perfect choice for you. Here are the reasons why you should choose us:',
     'why_choose_me_content_1' => 'With over 3 years of experience in the field of information technology, we have helped many clients solve issues related to software, application development, and data management.',
     'why_choose_me_content_2' => 'We are committed to providing the best support services for our customers. We are ready to support you during the implementation process, as well as after the deployment to ensure that our solution always operates smoothly.',
     'why_choose_me_content_3' => 'We provide high-quality technology solutions at a reasonable price, ensuring the best value for our customers.',
+    'what_i_do' => 'What :name do',
+    'projects' => 'Projects',
+    'hire_us' => 'Hire :name for your project',
+    'hire_us_sub' => 'Contact :name for the best experience.',
+    'some_pictures' => 'Some pictures',
 ];

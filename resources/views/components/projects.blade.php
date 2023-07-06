@@ -1,77 +1,25 @@
 <section id="portfolio" class="section">
-    <div class="container text-center">
-        <h6 class="subtitle">Portfolio</h6>
-        <h6 class="section-title mb-4">Check My Wonderful Works</h6>
-        <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
+    <div class="container text-center pt-4">
+        <h6 class="section-title mb-4 pt-4">{{ __('messages.projects') }}</h6>
         <div class="row">
-            <div class="col-sm-4">
-                <div class="img-wrapper">
-                    <img src="assets/imgs/folio-1.jpg" alt="">
-                    <div class="overlay">
-                        <div class="overlay-infos">
-                            <h5>Project Title</h5>
-                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                        </div>  
+            @foreach ($projects as $i => $project)
+                <div class="col-sm-6 col-md-3 shadow-lg p-3 mb-5 bg-white rounded mx-4">
+                    <div class="custom-card card border">
+                        <div class="card-body ccc">
+                            @if(!empty($project['type']) && $project['type'] == 'app')
+                                <i class="icon ti-crown"></i>
+                            @else
+                                <i class="icon ti-desktop"></i>
+                            @endif
+                            <h5>{{ $project['title'] }}</h5>
+                            <a href="{{ route('detail', ['id' => $project['directory']]) }}" target="_blank">
+                                View
+                                <span class="ti-arrow-right">  </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="img-wrapper">
-                    <img src="assets/imgs/folio-2.jpg" alt="">
-                    <div class="overlay">
-                        <div class="overlay-infos">
-                            <h5>Project Title</h5>
-                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                        </div>                              
-                    </div>
-                </div>                  
-            </div>
-            <div class="col-sm-4">
-                <div class="img-wrapper">
-                    <img src="assets/imgs/folio-3.jpg" alt="">
-                    <div class="overlay">
-                        <div class="overlay-infos">
-                            <h5>Project Title</h5>
-                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                        </div>  
-                    </div>
-                </div>
-                <div class="img-wrapper">
-                    <img src="assets/imgs/folio-4.jpg" alt="">
-                    <div class="overlay">
-                        <div class="overlay-infos">
-                            <h5>Project Title</h5>
-                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                        </div>                              
-                    </div>
-                </div>                  
-            </div>
-            <div class="col-sm-4">
-                <div class="img-wrapper">
-                    <img src="assets/imgs/folio-5.jpg" alt="">
-                    <div class="overlay">
-                        <div class="overlay-infos">
-                            <h5>Project Title</h5>
-                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                        </div>  
-                    </div>
-                </div>
-                <div class="img-wrapper">
-                    <img src="assets/imgs/folio-6.jpg" alt="">
-                    <div class="overlay">
-                        <div class="overlay-infos">
-                            <h5>Project Title</h5>
-                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                        </div>                              
-                    </div>
-                </div>                  
-            </div>
+            @endforeach
         </div>
-
     </div>
 </section>

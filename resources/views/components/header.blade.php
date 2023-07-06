@@ -9,7 +9,12 @@
             <ul class="navbar-nav ml-auto align-items-center">
                 @foreach ($menu as $item)
                     <li class="nav-item">
-                        <a class="nav-link" href="#{{ $item }}"> {{ __("messages.menu.$item") }}</a>
+                        @if(isset($isDetail) && $isDetail)
+                            <a class="nav-link" data-go-to="{{ $item }}" href="#"> {{ __("messages.menu.$item") }}</a>
+
+                        @else
+                            <a class="nav-link" href="#{{ $item }}"> {{ __("messages.menu.$item") }}</a>
+                        @endif
                     </li>
                 @endforeach
                 <li class="nav-item">
@@ -33,32 +38,32 @@
                 </li>
             </ul>
         </div>
-    </div>          
+    </div>
 </nav>
 
-<header class="header" id="Home">
-    <div class="container">
+@php($banner = asset('assets/imgs/banner.jpg'))
+{{--@php($banner = 'https://i.pinimg.com/originals/bf/fc/bb/bffcbb3c0a5f66158141ae3e6c89bf11.jpg')--}}
+<header class="header" id="Home" style="
+    background-image: url('{{ $banner }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+">
+    <div class="container infor-header">
         <div class="infos">
-            <h6 class="subtitle">{{ __('messages.hello') }}</h6>
-            <h6 class="title">{{ __('messages.team') }}</h6>
-            <p>{{ __('messages.jobs') }}</p>
-
-            {{-- <div class="buttons pt-3">
-                <button class="btn btn-primary rounded" disable="true">HIRE ME</button>
-                <button class="btn btn-dark rounded" disable="true">DOWNLOAD CV</button>
-            </div>       --}}
+            <h6 class="subtitle text-white">{{ __('messages.hello') }}</h6>
+            <h6 class="title text-white">{{ $teamName }}</h6>
+            <p class="text-white">{{ __('messages.jobs') }}</p>
 
             <div class="socials mt-4">
-                <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
+                <a class="social-item" href="https://www.facebook.com/trantien151198" target="_blank"><i class="ti-facebook"></i></a>
+                <a class="social-item" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tienit150198@gmail.com" target="_blank"><i class="ti-google"></i></a>
                 <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
                 <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
             </div>
-        </div>              
-        {{-- <div class="img-holder">
-            <img src="{{ asset('assets/imgs/logo.png') }}" alt="">
-        </div>       --}}
-    </div>  
+        </div>
+    </div>
 
     <div class="widget">
         <div class="widget-item">
@@ -71,3 +76,4 @@
         </div>
     </div>
 </header>
+

@@ -1,9 +1,9 @@
 <?php
 return [
-    'name' => 'CTM',
-    'team' => 'CTM - TEAM',
-    'hello' => 'Xin chào, Chào mừng đến với',
-    'introduce' => 'Giới thiệu đội ngũ CTM',
+    'name' => ':name',
+    'team' => ':name - TEAM',
+    'hello' => 'Chào mừng đến với',
+    'introduce' => 'Giới thiệu đội ngũ :name',
     'about_our' => 'CTM team, những lập trình viên có hơn :year năm kinh nghiệm trong lĩnh vực phát triển phần mềm. Từ các ứng dụng, trang Web đến các Công cụ chuyển đổi số đơn giản và phức tạp. Linh hoạt trong việc sử dụng nhiều ngôn ngữ lập trình và công nghệ mới. CTM team luôn cố gắng làm hài lòng khách hàng đến mức tốt nhất có thể.',
     'menu' => [
         'home' => 'Trang chủ',
@@ -17,9 +17,14 @@ return [
     'reason_2' => 'Cam kết dịch vụ',
     'reason_3' => 'Cung cấp các giải pháp công nghệ chất lượng cao với giá cả hợp lý',
     'show_more' => 'Xem thêm',
-    'why_choose_me' => 'Tại sao nên chọn CTM',
+    'why_choose_me' => 'Tại sao nên chọn :name',
     'why_choose_me_content' => 'Nếu bạn đang tìm kiếm một đối tác IT đáng tin cậy để giúp bạn giải quyết các vấn đề công nghệ, thì chúng tôi là sự lựa chọn hoàn hảo cho bạn. Đây là những lý do tại sao bạn nên chọn chúng tôi:',
     'why_choose_me_content_1' => 'Với hơn 3 năm kinh nghiệm trong lĩnh vực công nghệ thông tin, chúng tôi đã giúp nhiều khách hàng giải quyết các vấn đề liên quan đến phần mềm, phát triển ứng dụng và quản lý dữ liệu.',
     'why_choose_me_content_2' => 'Chúng tôi cam kết đem đến dịch vụ hỗ trợ tốt nhất cho khách hàng của mình. Chúng tôi sẵn sàng hỗ trợ bạn trong quá trình triển khai, cũng như sau khi triển khai để đảm bảo rằng giải pháp của chúng tôi luôn hoạt động tốt.',
     'why_choose_me_content_3' => 'Chúng tôi cung cấp các giải pháp công nghệ chất lượng cao với giá cả hợp lý, đảm bảo mang lại giá trị tốt nhất cho khách hàng của chúng tôi.',
+    'what_i_do' => 'Dịch vụ của :name',
+    'projects' => 'Sản phẩm',
+    'hire_us' => 'Thuê :name cho dự án của bạn',
+    'hire_us_sub' => 'Liên hệ :name ngay để có trải nghiệm tốt nhất.',
+    'some_pictures' => 'Hình ảnh',
 ];
